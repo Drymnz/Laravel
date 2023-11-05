@@ -7,6 +7,8 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
+                'resources/js/profile_picture.jpg',
+                'resources/css/animetion_bord.css'
             ],
             refresh: true,
         }),

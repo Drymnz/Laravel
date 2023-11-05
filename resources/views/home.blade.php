@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css','resources/css/animetion_bord.css'])
 </head>
 <body>
+
     <div id="card">
         <div id="top_card"  class="bot_top_card size_test">
             <div id="name"  class="size_test">
@@ -23,7 +24,7 @@
                 </p>
             </div>
             <div id="photo"  class="">
-                @
+                <img loading="lazy" src="{{ Vite::asset('resources/image/profile_picture.jpg') }}" alt="" />
             </div>
         </div>
     </div>

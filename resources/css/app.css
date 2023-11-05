@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100&display=swap');
 *
 {
     padding: 0;
     border: 0;
     margin: 0;
+    font-family: 'Playpen Sans';
 }
 body {
     height: 100hv;
@@ -11,9 +13,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-h1 {
-    color: blue;
 }
 #card
 {
@@ -25,31 +24,62 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
-#name
-{
-    width:90%;
-}
 #top_card
 {
     width: 90%;
-    height: 10%;
-    margin-top: 5vh;
+    height: auto;
+    border-top: 5vh;
+    border-bottom: 5vh;
+}
+#name
+{
+    width:90%;
+    font-size: 5vh;
 }
 #bot_card
 {
     width: 90%;
-    height: 70%;
-    margin-top: 10vh;
+    height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    box-sizing: border-box;
+    overflow: auto;
+    text-overflow: ellipsis;
 }
 #info_card
 {
-    width: 50%;
-    height: 100%;
+    width: 70%;
+    height: 50vh;
+    font-size: 3vh;
+}
+#info_card > p
+{
+    color: blue;
     text-align: left;
     text-align: justify;
     text-align-last: center;
+    background-color: black;
+    font-weight: bold;
+    font-weight: 600;
+    color: white;
+    /* para que no salga del texto */
 }
+#photo
+{
+    height: 90%;
+    display: flex;
+    margin-right: 3vh;
+    margin-left: 3vh;
+    flex-direction: row-reverse;
+}
+#photo > img
+{
+    border: black 5px solid;
+    filter: contrast(125%);
+    transform: scaleX(-1);
+}
+

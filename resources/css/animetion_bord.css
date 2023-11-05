@@ -1,0 +1,17 @@
+#card::before {
+    content: "";
+    position: absolute;
+    background-image: conic-gradient(rgb(168, 239, 255, 1) 20deg, transparent 120deg);
+}
+
+#card::after {
+    position: absolute;
+    background: #000;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
